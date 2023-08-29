@@ -1,27 +1,55 @@
-# React + TypeScript + Vite
+# Vanilla React To-Do List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a straightforward To-Do List application created with Vanilla React, Vite, and TypeScript. It allows you to mark them as completed.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Mark tasks as completed by clicking on them.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Table of Contents
 
-- Configure the top-level `parserOptions` property like this:
+- [Usage](#usage)
+- [Sample Data](#sample-data)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Usage
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. **Getting Started**
+
+   - Clone the repository:
+
+     ```bash
+     git clone https://github.com/kachunone/my-todo-app.git
+     ```
+
+   - Navigate to the project folder:
+
+     ```bash
+     cd todo-list-app
+     ```
+
+   - Install dependencies:
+
+     ```bash
+     npm install
+     ```
+
+   - Start the development server:
+
+     ```bash
+     npm run dev
+     ```
+
+   - Open your browser and access the app at `http://localhost:5173`.
+
+2. **Managing Tasks**
+
+   - Click on a task to mark it as completed.
+
+## Sample Data
+
+The app initially contains a set of dummy tasks defined in the code:
+
+```javascript
+const todos: string[] = ["Buy groceries", "Clean the house", "Walk the dog"];
